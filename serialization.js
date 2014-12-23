@@ -18,7 +18,8 @@ var history = [];
 //	Added var for files to point to history.txt and backupFile.txt
 var file = "history.txt";
 var backupFile = "backupFile.txt";
-server.on( "connection", function ( ws ) { //	On connection history array joins and sends array elements as strings
+//	On connection history array joins and sends array elements as strings
+server.on( "connection", function ( ws ) { 
 	var historyMsg = history.join( "\n" );
 	//	On connection check if backed up history is shorter than backup (indicating possible crash)
 	//	If so, populate from backup file
