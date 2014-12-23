@@ -2,7 +2,7 @@
 //	-- current issues -- 
 //	1. first connect after crash responds empty -- fix scope or ASYNC!
 //	2. if format gets messed up no easy way to fix -- make separate function file for future projects
-//	3. empty strings saved with wscat -- TIMESTAMP?! I think so... // will test tomorrow for resolution
+
 var WSS = require( 'ws' )
 	.Server;
 var server = new WSS( {
